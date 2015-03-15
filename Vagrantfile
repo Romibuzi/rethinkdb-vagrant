@@ -38,6 +38,8 @@ Vagrant.configure(2) do |config|
       #Install python driver
       apt-get install --assume-yes python-dev python-pip;
       pip install rethinkdb;
+      # Optional, used to generate fake data
+      pip install fake-factory;
     EOF
   end
 end
